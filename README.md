@@ -10,7 +10,7 @@ Ker-Traits - general usage traits. Part of Ker library
 Traits List
 -----------
 
-###InaccessiblePropertiesProtectorTrait
+### InaccessiblePropertiesProtectorTrait
 
 Trait, that protects accessing inaccessible (unknown) properties to help keeping code clean and safe.
 
@@ -25,10 +25,31 @@ $foo->vaz = 123; // PHP claims that code is OK, even if you misspelled variable 
 
 class Bar
 {
-    use \Ker\InaccessiblePropertiesProtectorTrait;
+    use InaccessiblePropertiesProtectorTrait;
+
     public $baz;
 }
 
 $bar = new Bar();
 $bar->vaz = 123; // now PHP throws \LogicException
+```
+
+### InstanceCreationDisallowerTrait
+
+Trait, that disallow to create instance of class.
+Use for protecting static classes (only static members).
+
+```php
+class Foo
+{
+    use InstanceCreationDisallowerTrait;
+
+    public static function createInstance()
+    {
+        return new static();
+    }
+}
+
+$foo = new Foo(); // PHP throws fatal error
+$foo = Foo::createInstance(); // PHP throws \LogicException
 ```
