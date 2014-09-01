@@ -1,0 +1,22 @@
+{
+    "name": "keradus/ker-traits",
+    "description": "Ker-Traits: general usage traits. Part of Ker library",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/keradus/Ker-Traits",
+    "authors": [
+        {
+            "name": "Dariusz Rumiński",
+            "email": "dariusz.ruminski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keradus\\Ker\\Traits\\": "src",
+            "Keradus\\Ker\\Traits\\Tests\\": "test"
+        }
+    }
+}
