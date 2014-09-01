@@ -18,5 +18,10 @@
             "Keradus\\Ker\\Traits\\": "src",
             "Keradus\\Ker\\Traits\\Tests\\": "test"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
     }
 }
