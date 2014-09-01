@@ -1,6 +1,7 @@
 language: php
 
 install:
+  - travis_retry composer install --no-interaction --prefer-source
   - curl http://cs.sensiolabs.org/get/php-cs-fixer.phar -o php-cs-fixer.phar
 
 script:
