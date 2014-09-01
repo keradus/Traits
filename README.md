@@ -1,5 +1,8 @@
 Ker-Traits
 ==========
+[![Package version](http://img.shields.io/packagist/v/keradus/ker-traits.svg)](https://packagist.org/packages/keradus/ker-traits)
+[![Build status](http://img.shields.io/travis/keradus/ker-traits/master.svg)](https://travis-ci.org/keradus/ker-traits)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/97573120-b091-4bc0-8994-7ecb54fab181/mini.png)](https://insight.sensiolabs.com/projects/97573120-b091-4bc0-8994-7ecb54fab181)
 
 Ker-Traits - general usage traits. Part of Ker library
 
