@@ -8,4 +8,11 @@ class TestCase extends \PHPUnit_Framework_TestCase
     {
         return str_replace("Keradus\\Ker\\Traits\\Tests\\Test\\", "Keradus\\Ker\\Traits\\Tests\\Fixture\\", get_called_class());
     }
+
+    public function createFixtureInstance()
+    {
+        $name = $this->getFixtureName();
+
+        return new $name();
+    }
 }

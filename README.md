@@ -5,7 +5,7 @@ Ker-Traits
 [![Build status](http://img.shields.io/travis/keradus/Ker-Traits/master.svg)](https://travis-ci.org/keradus/Ker-Traits)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/97573120-b091-4bc0-8994-7ecb54fab181/mini.png)](https://insight.sensiolabs.com/projects/97573120-b091-4bc0-8994-7ecb54fab181)
 
-Ker-Traits - general usage traits. Part of Ker library
+Ker-Traits - general usage traits. Part of Ker library.
 
 Traits List
 -----------
@@ -32,6 +32,26 @@ class Bar
 
 $bar = new Bar();
 $bar->vaz = 123; // now PHP throws \LogicException
+```
+
+### InnerClassCacheTrait
+
+Trait, that adds functionality of inner class cache.
+
+```php
+class Foo
+{
+    use InnerClassCacheTrait;
+
+    public function square($x)
+    {
+        if (!isset($this->cache[$x])) {
+            $this->cache[$x] = $x * $x;
+        }
+
+        return $this->cache[$x];
+    }
+}
 ```
 
 ### InstanceCreationDisallowerTrait
