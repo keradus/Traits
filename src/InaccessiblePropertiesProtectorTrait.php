@@ -18,7 +18,7 @@ namespace Keradus\Ker\Traits;
  *
  *  class Bar
  *  {
- *      use \Ker\InaccessiblePropertiesProtectorTrait;
+ *      use InaccessiblePropertiesProtectorTrait;
  *      public $baz;
  *  }
  *
