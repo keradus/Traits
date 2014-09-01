@@ -24,6 +24,7 @@ trait InnerClassCacheTrait
 {
     /**
      * Cache container.
+     *
      * @type array
      */
     protected $cache = [];
