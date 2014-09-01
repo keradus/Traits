@@ -1,2 +1,0 @@
-Singleton:
-    tworze A use Singleton, B use Singleton, $a = A::getInstance(), $b = B::getInstance() - czy jest to ta sama czy inna instancja ???
