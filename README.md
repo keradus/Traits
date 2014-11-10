@@ -53,3 +53,23 @@ class Foo
     }
 }
 ```
+
+### InstanceCreationDisallowerTrait
+
+Trait, that disallow to create instance of class.
+Use for protecting static classes (only static members).
+
+```php
+class Foo
+{
+    use InstanceCreationDisallowerTrait;
+
+    public static function createInstance()
+    {
+        return new static();
+    }
+}
+
+$foo = new Foo(); // PHP throws fatal error
+$foo = Foo::createInstance(); // PHP throws \LogicException
+```
