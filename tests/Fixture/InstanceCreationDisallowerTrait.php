@@ -1,10 +1,10 @@
 <?php
 
-namespace Keradus\Ker\Traits\Tests\Fixture;
+namespace Keradus\Traits\Tests\Fixture;
 
 class InstanceCreationDisallowerTrait
 {
-    use \Keradus\Ker\Traits\InstanceCreationDisallowerTrait;
+    use \Keradus\Traits\InstanceCreationDisallowerTrait;
 
     public static function createInstance()
     {

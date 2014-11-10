@@ -1,10 +1,10 @@
 <?php
 
-namespace Keradus\Ker\Traits\Tests\Fixture;
+namespace Keradus\Traits\Tests\Fixture;
 
 class InnerClassCacheTrait
 {
-    use \Keradus\Ker\Traits\InnerClassCacheTrait;
+    use \Keradus\Traits\InnerClassCacheTrait;
 
     public function get($key)
     {

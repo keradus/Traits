@@ -1,8 +1,8 @@
 <?php
 
-namespace Keradus\Ker\Traits\Tests\Test;
+namespace Keradus\Traits\Tests\Test;
 
-class InstanceCreationDisallowerTrait extends \Keradus\Ker\Traits\Tests\PHPUnit\TestCase
+class InstanceCreationDisallowerTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 {
     public function testConstructorVisibility()
     {

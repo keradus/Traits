@@ -1,8 +1,8 @@
 <?php
 
-namespace Keradus\Ker\Traits\Tests\Test;
+namespace Keradus\Traits\Tests\Test;
 
-class InnerClassCacheTrait extends \Keradus\Ker\Traits\Tests\PHPUnit\TestCase
+class InnerClassCacheTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 {
     /**
      * Test if cache for two instances are independent.

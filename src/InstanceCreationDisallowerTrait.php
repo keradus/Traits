@@ -1,6 +1,6 @@
 <?php
 
-namespace Keradus\Ker\Traits;
+namespace Keradus\Traits;
 
 /**
  * Trait, that disallow to create instance of class.

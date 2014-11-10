@@ -1,8 +1,8 @@
 <?php
 
-namespace Keradus\Ker\Traits\Tests\Test;
+namespace Keradus\Traits\Tests\Test;
 
-class PropertyTrait extends \Keradus\Ker\Traits\Tests\PHPUnit\TestCase
+class PropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 {
     protected $fixture;
     protected $fixtureDefaultState = [

@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Keradus\\Ker\\Traits\\": "src",
-            "Keradus\\Ker\\Traits\\Tests\\": "test"
+            "Keradus\\Traits\\": "src",
+            "Keradus\\Traits\\Tests\\": "tests"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.x-dev"
         }
     }
 }

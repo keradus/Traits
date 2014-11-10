@@ -8,8 +8,8 @@
     strict="true"
     verbose="true"
 >
-    <testsuite name="Ker">
-        <directory suffix=".php">./test/Test</directory>
+    <testsuite name="Traits">
+        <directory suffix=".php">./tests/Test</directory>
     </testsuite>
 
     <filter>

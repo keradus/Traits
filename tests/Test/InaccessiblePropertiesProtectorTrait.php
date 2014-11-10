@@ -1,8 +1,8 @@
 <?php
 
-namespace Keradus\Ker\Traits\Tests\Test;
+namespace Keradus\Traits\Tests\Test;
 
-class InaccessiblePropertiesProtectorTrait extends \Keradus\Ker\Traits\Tests\PHPUnit\TestCase
+class InaccessiblePropertiesProtectorTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 {
     protected $fixture;
 

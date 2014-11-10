@@ -1,6 +1,6 @@
 <?php
 
-namespace Keradus\Ker\Traits;
+namespace Keradus\Traits;
 
 /**
  * Property trait in static way.
