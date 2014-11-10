@@ -33,3 +33,23 @@ class Bar
 $bar = new Bar();
 $bar->vaz = 123; // now PHP throws \LogicException
 ```
+
+### InnerClassCacheTrait
+
+Trait, that adds functionality of inner class cache.
+
+```php
+class Foo
+{
+    use InnerClassCacheTrait;
+
+    public function square($x)
+    {
+        if (!isset($this->cache[$x])) {
+            $this->cache[$x] = $x * $x;
+        }
+
+        return $this->cache[$x];
+    }
+}
+```
