@@ -11,8 +11,8 @@ class StaticPropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
         "b" => 2,
         "c" => "ccc",
         "d" => null,
-        "e" => [1, 2, 3, ],
-        "f" => ["f1" => "f11", "f2" => "f22", ],
+        "e" => [1, 2, 3],
+        "f" => ["f1" => "f11", "f2" => "f22"],
     ];
 
     public function setUp()
@@ -125,7 +125,7 @@ class StaticPropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
     {
         $fixture = $this->getFixtureName();
 
-        $fixture::remove(["a", "b", ]);
+        $fixture::remove(["a", "b"]);
 
         $this->assertFalse($fixture::hasOne("a"));
         $this->assertFalse($fixture::hasOne("b"));
@@ -182,7 +182,6 @@ class StaticPropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 
     public function testSetByArray()
     {
-
         $fixture = $this->getFixtureName();
         $values = [
             uniqid() => uniqid(),
@@ -200,10 +199,9 @@ class StaticPropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 
     public function testSetByArrayAndArray()
     {
-
         $fixture = $this->getFixtureName();
-        $keys = [ uniqid(), uniqid(), uniqid(), ];
-        $values = [ uniqid(), uniqid(), uniqid(), ];
+        $keys = [ uniqid(), uniqid(), uniqid()];
+        $values = [ uniqid(), uniqid(), uniqid()];
 
         $fixture::set($keys, $values);
 
@@ -219,8 +217,8 @@ class StaticPropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
     public function testSetByArrayAndDifferSizeArray()
     {
         $fixture = $this->getFixtureName();
-        $keys = [ uniqid(), uniqid(), ];
-        $values = [ uniqid(), uniqid(), uniqid(), ];
+        $keys = [ uniqid(), uniqid()];
+        $values = [ uniqid(), uniqid(), uniqid()];
 
         $fixture::set($keys, $values);
     }

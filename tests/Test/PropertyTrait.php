@@ -12,8 +12,8 @@ class PropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
         "b" => 2,
         "c" => "ccc",
         "d" => null,
-        "e" => [1, 2, 3, ],
-        "f" => ["f1" => "f11", "f2" => "f22", ],
+        "e" => [1, 2, 3],
+        "f" => ["f1" => "f11", "f2" => "f22"],
     ];
 
     public function setUp()
@@ -97,7 +97,7 @@ class PropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 
     public function testRemoveByArray()
     {
-        $this->fixture->remove(["a", "b", ]);
+        $this->fixture->remove(["a", "b"]);
 
         $this->assertFalse($this->fixture->hasOne("a"));
         $this->assertFalse($this->fixture->hasOne("b"));
@@ -160,8 +160,8 @@ class PropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
 
     public function testSetByArrayAndArray()
     {
-        $keys = [ uniqid(), uniqid(), uniqid(), ];
-        $values = [ uniqid(), uniqid(), uniqid(), ];
+        $keys = [ uniqid(), uniqid(), uniqid()];
+        $values = [ uniqid(), uniqid(), uniqid()];
 
         $this->fixture->set($keys, $values);
 
@@ -176,8 +176,8 @@ class PropertyTrait extends \Keradus\Traits\Tests\PHPUnit\TestCase
      */
     public function testSetByArrayAndDifferSizeArray()
     {
-        $keys = [ uniqid(), uniqid(), ];
-        $values = [ uniqid(), uniqid(), uniqid(), ];
+        $keys = [ uniqid(), uniqid()];
+        $values = [ uniqid(), uniqid(), uniqid()];
 
         $this->fixture->set($keys, $values);
     }

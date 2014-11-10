@@ -9,7 +9,6 @@ namespace Keradus\Traits;
  */
 trait StaticPropertyTrait
 {
-
     /**
      * Data container.
      */
@@ -18,7 +17,7 @@ trait StaticPropertyTrait
     /**
      * Get elements.
      *
-     * @param  list|string[]|string $... elements to get - single name, list or array
+     * @param list|string[]|string $... elements to get - single name, list or array
      *
      * @return mixed[]|mixed element or array of elements
      */
@@ -47,10 +46,10 @@ trait StaticPropertyTrait
     /**
      * Get single element.
      *
-     * @param  string $_name  element name
-     * @param  mixed  $_value default value if element is missing
+     * @param string $_name  element name
+     * @param mixed  $_value default value if element is missing
      *
-     * @return mixed  element value
+     * @return mixed element value
      */
     public static function getOne($_name, $_value = null)
     {
@@ -64,7 +63,7 @@ trait StaticPropertyTrait
     /**
      * Check if element exists
      *
-     * @param  string $_name element name
+     * @param string $_name element name
      *
      * @return bool
      */
@@ -89,7 +88,7 @@ trait StaticPropertyTrait
         $names = (($argsCount > 1) ? func_get_args() : func_get_arg(0));
 
         if (!is_array($names)) {
-            $names = [$names, ];
+            $names = [$names];
         }
 
         foreach ($names as $name) {
