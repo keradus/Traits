@@ -73,3 +73,13 @@ class Foo
 $foo = new Foo(); // PHP throws fatal error
 $foo = Foo::createInstance(); // PHP throws \LogicException
 ```
+
+### PropertyTrait
+
+Property trait.
+
+### SingletonTrait
+
+### StaticPropertyTrait
+
+Property trait in static way.
