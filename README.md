@@ -9,3 +9,27 @@ Traits - general usage traits.
 
 Traits List
 -----------
+
+### InaccessiblePropertiesProtectorTrait
+
+Trait, that protects accessing inaccessible (unknown) properties to help keeping code clean and safe.
+
+```php
+class Foo
+{
+    public $baz;
+}
+
+$foo = new Foo();
+$foo->vaz = 123; // PHP claims that code is OK, even if you misspelled variable name!
+
+class Bar
+{
+    use InaccessiblePropertiesProtectorTrait;
+
+    public $baz;
+}
+
+$bar = new Bar();
+$bar->vaz = 123; // now PHP throws \LogicException
+```
