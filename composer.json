@@ -1,0 +1,25 @@
+{
+    "name": "keradus/traits",
+    "description": "Traits: general usage traits",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/keradus/Traits",
+    "authors": [
+        {
+            "name": "Dariusz Rumiński",
+            "email": "dariusz.ruminski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "~1.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keradus\\Traits\\": "src",
+            "Keradus\\Traits\\Tests\\": "tests"
+        }
+    }
+}
